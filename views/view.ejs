@@ -1,0 +1,110 @@
+<%- include('header'); -%>
+
+
+<% if (db.password !== null) { %>
+
+    <% if (post.password === db.password) { %>
+
+        <div class="ads-landscape">
+
+        </div>
+        <div class="container-fluid text-center">    
+          <div class="row content">
+            <div class="col-sm-3 sidenav">
+        
+            </div>
+            <div class="col-sm-9 text-left">
+         <div class = "center_it">
+                <div class="cotent-box">
+                         <p class="para"><%= _NAME %> provides one of the finest Link Protecting services in the world. <%= _NAME %> helps you protect your links from inconvenient people or automated robots with security such as Captcha and password. We will convert your links to direct links that will act as auto forwarders to your original links.</p>
+        
+        
+        <h2>Thanks for using our service </h2>
+        <%- _VIEW %>
+        <p>Views: <%= _HIT %> </p>	
+            <p class="para"><%= _NAME %> is the easiest and most common way to protected links. Just go to our home page of our site, input your links in the text area (box) and press the "Protect your links" button. This will generate a results page where several outputs will be listed, such as generated protected links, direct links and remove links</p>
+            </div>
+            </div>
+         
+        <div style="text-align:center; margin-top: 15px;">
+        
+        </div>
+        </div>
+        
+        </div>
+        </div>
+        </div>
+            <div style="text-align:center; margin-top: 15px; width: 100%; height:auto;">
+        </div>
+
+    <% } else { %>
+
+    <div class="ads-landscape">
+    </div>
+    <div class="container-fluid text-center">    
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+    
+        </div>
+        <div class="col-sm-9 text-left">
+     <div class = "center_it">
+            <div class="cotent-box">
+                     <p class="para"><%= _NAME %> provides one of the finest Link Protecting services in the world. <%= _NAME %> helps you protect your links from inconvenient people or automated robots with security such as Captcha and password. We will convert your links to direct links that will act as auto forwarders to your original links.</p>
+    
+         <form action="" method="post">
+        <div class="form-group" >
+          <label for="password">Password:</label><br>
+         <div class="form-group">
+         <input class="form-control" type="password" name="password" size="20" placeholder="Enter password"></input>
+       </div>      
+      <input type="submit" name="submit" class="btn btn-success" value="Submit"><br>
+      </form>	
+        <p class="para"><%= _NAME %> is the easiest and most common way to protected links. Just go to our home page of our site, input your links in the text area (box) and press the "Protect your links" button. This will generate a results page where several outputs will be listed, such as generated protected links, direct links and remove links</p>
+        </div>
+        </div>
+    <div style="text-align:center; margin-top: 15px;">
+    
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    <div style="text-align:center; margin-top: 15px; width: 100%; height:auto;">
+    </div>
+    <% } %>
+  <% } else { %>
+    <div class="ads-landscape">
+
+    </div>
+    <div class="container-fluid text-center">    
+      <div class="row content">
+        <div class="col-sm-3 sidenav">
+    
+        </div>
+        <div class="col-sm-9 text-left">
+     <div class = "center_it">
+            <div class="cotent-box">
+                     <p class="para"><%= _NAME %> provides one of the finest Link Protecting services in the world. <%= _NAME %> helps you protect your links from inconvenient people or automated robots with security such as Captcha and password. We will convert your links to direct links that will act as auto forwarders to your original links.</p>
+    
+    
+    <h2>Thanks for using our service </h2>
+    <%- _VIEW %>
+    <p>Views: <%= _HIT %> </p>	
+        <p class="para"><%= _NAME %> is the easiest and most common way to protected links. Just go to our home page of our site, input your links in the text area (box) and press the "Protect your links" button. This will generate a results page where several outputs will be listed, such as generated protected links, direct links and remove links</p>
+        </div>
+        </div>
+     
+    <div style="text-align:center; margin-top: 15px;">
+    
+    </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+        <div style="text-align:center; margin-top: 15px; width: 100%; height:auto;">
+    </div>
+  <% } %>  
+
+  <%- include('footer'); -%>
